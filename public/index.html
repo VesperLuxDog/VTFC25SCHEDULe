@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Con Event List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Very Tiny Fur-Con 2025</h1>
+        <button id="admin-login-button">Admin Login</button>
+    </header>
+
+    <main id="public-view">
+        <h2>Upcoming Events</h2>
+        <div id="event-list">
+            <p>Loading events...</p>
+        </div>
+    </main>
+
+    <section id="admin-view" class="hidden">
+        <button id="logout-button">Logout</button>
+        <h2>Admin Panel</h2>
+
+        <section id="add-event-form">
+            <h3>Add New Event</h3>
+            <form id="event-form">
+                <label for="event-title">Title:</label>
+                <input type="text" id="event-title" required><br>
+
+                <label for="event-time">Time:</label>
+                <input type="text" id="event-time" placeholder="e.g., Friday 2:00 PM - 3:00 PM" required><br>
+
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" required><br>
+
+                <label for="event-description">Description:</label>
+                <textarea id="event-description"></textarea><br>
+
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+
+        <section id="manage-events">
+            <h3>Manage Existing Events</h3>
+            <button id="reorder-events-button">Reorder Events</button>
+            <div id="admin-event-list">
+                <!-- Admin view of events with delete buttons -->
+            </div>
+        </section>
+
+        <!-- Password Change -->
+        <section id="password-change-section">
+            <h3>Change Admin Password</h3>
+            <input type="password" id="new-password-input" placeholder="Enter new password" />
+            <button id="save-new-password">Save New Password</button>
+        </section>
+    </section>
+
+    <!-- Password Modal -->
+    <div id="password-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Admin Login</h3>
+            <label for="password-input">Password:</label>
+            <input type="password" id="password-input">
+            <div class="modal-buttons">
+                <button id="submit-password">Login</button>
+                <button id="cancel-password" class="cancel-button">Cancel</button>
+            </div>
+            <p id="password-error" class="error-message hidden">Incorrect password.</p>
+        </div>
+    </div>
+
+    <!-- Templates for event display -->
+    <template id="event-template">
+        <div class="event-item">
+            <h3 class="event-item-title"></h3>
+            <p class="event-item-time"></p>
+            <p class="event-item-location"></p>
+            <p class="event-item-description"></p>
+        </div>
+    </template>
+
+    <template id="admin-event-template">
+        <div class="event-item admin-event-item">
+            <div class="event-details">
+                <h3 class="event-item-title"></h3>
+                <p class="event-item-time"></p>
+                <p class="event-item-location"></p>
+                <p class="event-item-description"></p>
+            </div>
+            <input type="number" class="order-number" placeholder="Order (optional)">
+            <button class="delete-event-button">Delete</button>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

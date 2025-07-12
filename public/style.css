@@ -1,0 +1,257 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+main, section#admin-view {
+    padding: 1.5rem 2rem;
+    max-width: 900px;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #345a7e;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: #4a90e2;
+    margin-top: 1.5rem;
+}
+
+#event-list, #admin-event-list {
+    margin-top: 1rem;
+}
+
+.event-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.event-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.event-item p {
+    margin: 0.3rem 0;
+    color: #555;
+    font-size: 0.95em;
+}
+.event-item p:first-of-type { /* Time */
+    font-weight: bold;
+    color: #4a90e2;
+}
+.event-item-location::before {
+    content: '📍 ';
+}
+.event-item-description {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* Admin Styles */
+#admin-login-button, #logout-button, button[type="submit"], .delete-event-button, #submit-password {
+    padding: 0.6rem 1.2rem;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+}
+
+#admin-login-button:hover, #logout-button:hover, button[type="submit"]:hover, .delete-event-button:hover, #submit-password:hover {
+    background-color: #4cae4c;
+}
+
+#logout-button {
+    background-color: #d9534f;
+    float: right;
+}
+#logout-button:hover {
+    background-color: #c9302c;
+}
+
+
+#add-event-form {
+    background-color: #e9f2fc;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    border: 1px solid #c9ddf5;
+}
+
+#add-event-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #345a7e;
+}
+
+#add-event-form input[type="text"],
+#add-event-form textarea {
+    width: calc(100% - 22px); /* Adjust for padding/border */
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#add-event-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.admin-event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-event-item .event-details {
+   flex-grow: 1;
+   margin-right: 1rem;
+}
+
+.delete-event-button {
+    background-color: #d9534f;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+.delete-event-button:hover {
+    background-color: #c9302c;
+}
+
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Dim background */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative; /* For close button positioning */
+    text-align: center;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: #4a90e2;
+}
+
+.modal-content label {
+    display: block;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: bold;
+}
+
+.modal-content input[type="password"] {
+     width: calc(100% - 22px); /* Adjust for padding/border */
+    padding: 0.6rem;
+    /* margin-bottom: 1rem; */ 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 0.5rem; 
+}
+
+/* Style for button container */
+.modal-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+/* Style for the cancel button */
+.cancel-button {
+    padding: 0.6rem 1.2rem;
+    background-color: #aaa; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+}
+
+.cancel-button:hover {
+    background-color: #888; 
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.9em;
+    margin-top: 0.5rem;
+}

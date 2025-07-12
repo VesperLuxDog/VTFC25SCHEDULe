@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Opening Ceremonies",
+    "time": "Saturday 11:00 - 11:30am",
+    "location": "Main Stage",
+    "description": "Get to know the staff, Guest of Honor, and what to expect from the day! Hear the rules and special information to help your day at the con run smoothly.",
+    "order": 1,
+    "id": 1745434704381
+  },
+  {
+    "title": "Fursuit Fashion Show",
+    "time": "11:30am - 12pm",
+    "location": "Main Stage",
+    "description": "Show off your fursuit in the fursuit fashion show! Cheer on your fursuiter friends as they walk the runway!",
+    "order": 2,
+    "id": 1745435805667
+  },
+  {
+    "title": "Fursuit Games & Photo Room",
+    "time": "12:00 - 12:30pm",
+    "location": "Backyard",
+    "description": "Play some games in fursuit or just watch the silly suiters get up to crazy hijinks! Gte some photos taken of you and your friends! The group photo will happen at 12:15pm.",
+    "order": 3,
+    "id": 1745436018162
+  },
+  {
+    "title": "Make Your Own: Galaxy Slime!",
+    "time": "2:00 - 2:30pm",
+    "location": "Main Stage",
+    "description": "Make your own space themed slime that you get to take home with you!",
+    "order": 5,
+    "id": 1745436182604
+  },
+  {
+    "title": "Super Smash Bros Ultimate Tournament",
+    "time": "3:00 - 5:00pm",
+    "location": "Living Room",
+    "description": "Go head-to-head in this ultimate tournament run by Dr. Calderone and Andi! This will be a double elimination tournament (two brackets: a loser's bracket and a winner's bracket). Controllers are provided.",
+    "order": 6,
+    "id": 1745436351042
+  },
+  {
+    "title": "Coffee/Hot Chocolate & Cookie Decorating",
+    "time": "4:00- 5:00pm",
+    "location": "Kitchen",
+    "description": "Come get some coffee/hot chocolate with Dr. Calderone and decorate some cookies made by Griff!",
+    "order": 7,
+    "id": 1745436443016
+  },
+  {
+    "title": "DINNER TIME",
+    "time": "5:30- 6:30pm",
+    "location": "Kitchen",
+    "description": "Pizza party!!! Pizza is included in registration fee so its free to eat for all!",
+    "order": 8,
+    "id": 1745436511140
+  },
+  {
+    "title": "Furry Jeopardy & Sketchbook Swap",
+    "time": "7:45- 8:15pm",
+    "location": "Living Room",
+    "description": "Play Furry Jeopardy hosted by Griff and draw some doodles in each other's sketchbooks! Bring your own sketchbooks as they will not be provided.",
+    "order": 10,
+    "id": 1745436712165
+  },
+  {
+    "title": "Rave (with DJ Vesper Lux)",
+    "time": "8:30 - 10pm",
+    "location": "Main Stage",
+    "description": "Rave with Vesper Lux! Glow sticks will be provided!",
+    "order": 11,
+    "id": 1745436828584
+  },
+  {
+    "title": "Closing Ceremonies & Clean Up",
+    "time": "10- 10:30pm",
+    "location": "Main Stage",
+    "description": "Closing it up and cleaning up the mess from the stimky furries!",
+    "order": 12,
+    "id": 1745436885068
+  },
+  {
+    "title": "Karaoke",
+    "time": "10:30 - 11:15pm",
+    "location": "Living Room",
+    "description": "Sing!",
+    "order": 13,
+    "id": 1745436930704
+  },
+  {
+    "title": "Bagels and Music",
+    "time": "SUNDAY 9:30 - 10:30am",
+    "location": "Kitchen",
+    "description": "Eat some bagels and get dance to some tunes!",
+    "order": 14,
+    "id": 1745437080273
+  },
+  {
+    "title": "Depart for P-town from Griff's house",
+    "time": "SUNDAY 10:30am",
+    "location": "Griff's House",
+    "description": "Depart for Provincetown promptly at 10:30am. It's a 50min drive.",
+    "order": 15,
+    "id": 1745437292468
+  },
+  {
+    "title": "Arrive in Provincetown",
+    "time": "11:30am",
+    "location": "Grace Hall Parking Lot",
+    "description": "Meet up at the Grace Hall Parking Lot.",
+    "order": 16,
+    "id": 1745437356247
+  },
+  {
+    "title": "Provincetown Depart",
+    "time": "3:00pm",
+    "location": "Provincetown",
+    "description": "Leave P- town around 3pm.",
+    "order": 17,
+    "id": 1745437400776
+  },
+  {
+    "title": "DINNER",
+    "time": "4:30 - 5:30pm",
+    "location": "Griff's House",
+    "description": "Burgers and Fries (Vegetarian options will be provided).",
+    "order": 18,
+    "id": 1745437454961
+  },
+  {
+    "title": "Depart to beach",
+    "time": "5:30pm",
+    "location": "Leaving Griff's house",
+    "description": "",
+    "order": 19,
+    "id": 1745437522213
+  },
+  {
+    "title": "Vesper Lux's Surf Fishing Panel",
+    "time": "6 - 7pm",
+    "location": "Brewster Beach",
+    "description": "Surf Fishing at the beach with Vesper Lux.",
+    "order": 20,
+    "id": 1745437605061
+  },
+  {
+    "title": "Sunset at the beach!",
+    "time": "7:30pm",
+    "location": "Brewster Beach",
+    "description": "",
+    "order": 21,
+    "id": 1745437632923
+  },
+  {
+    "title": "Return to Griff's House",
+    "time": "8:30pm",
+    "location": "Griff",
+    "description": "",
+    "order": 22,
+    "id": 1745437653361
+  },
+  {
+    "title": "Rave and PJ Party",
+    "time": "9:30pm",
+    "location": "Griff's House",
+    "description": "Put on your pjs and have a party! there will be a movie on and a rave!",
+    "order": 23,
+    "id": 1745437705826
+  }
+]
